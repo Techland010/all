@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechLand | PS4 GoldHEN Host</title>
+<link rel="stylesheet" href="style.css">
+<style>
+*{box-sizing:border-box}
+body{
+    margin:0;
+    min-height:100vh;
+    color:#fff;
+    background:#050505 url('ps4-bg.jpg') center/cover fixed no-repeat;
+    font-family:Arial,sans-serif;
+}
+body:before{
+    content:"";position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:-1;
+}
+.topbar{
+    width:min(1050px,92%);margin:22px auto 0;padding:18px 22px;
+    border:1px solid rgba(255,255,255,.14);border-radius:16px;
+    background:rgba(8,8,8,.82);backdrop-filter:blur(8px);
+    text-align:center;box-shadow:0 12px 40px rgba(0,0,0,.35)
+}
+.brand{font-size:34px;font-weight:800;letter-spacing:1px;margin:0}
+.brand span{color:#f31414}
+.sub{margin:6px 0 0;font-size:18px;color:#ddd}
+.contact{margin-top:12px;font-size:16px}
+.contact a{color:#35d46f;text-decoration:none;font-weight:700}
+#msgs{margin:26px auto 18px;width:min(1050px,92%);font-size:22px;text-align:center;min-height:28px}
+#menu,#crypto{width:min(1050px,92%);margin:0 auto 40px;padding:28px;border-radius:18px;background:rgba(8,8,8,.78);border:1px solid rgba(255,255,255,.13);box-shadow:0 14px 45px rgba(0,0,0,.35)}
+#menu h2,#crypto h2{margin:0 0 20px;text-align:center;color:#ffd83d;font-size:20px}
+.btn{margin:7px;padding:13px 20px;border:1px solid #555;border-radius:10px;background:#151515;color:#fff;font-size:17px;cursor:pointer;transition:.2s;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.btn:hover{transform:translateY(-2px);border-color:#f31414;background:#202020}
+.btn-multi{border-color:#f31414}
+.btn-onln{border-color:#25d366}
+.techland{
+    width:min(1050px,92%);margin:18px auto 25px;padding:16px 20px;
+    border-left:4px solid #f31414;border-radius:12px;background:rgba(15,15,15,.86);text-align:center
+}
+.techland strong{font-size:23px;color:#f31414}.techland small{display:block;color:#ddd;margin-top:5px;font-size:15px}
+#crypto{display:none;text-align:center}
+.qr-grid{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin:22px 0}
+.qr-card{width:280px;padding:18px;border-radius:15px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)}
+.qr-card img{width:180px;height:180px;object-fit:contain;background:#fff;padding:6px;border-radius:10px}
+.qr-card h3{margin:12px 0 7px;color:#ffd83d}.qr-card p{font-size:12px;word-break:break-all;color:#ddd}
+.return{margin-top:10px}
+.footer{padding:0 15px 30px;text-align:center;color:#aaa;font-size:14px}
+@media(max-width:600px){.brand{font-size:27px}.btn{width:100%;margin:5px 0}.qr-card{width:100%}}
+</style>
+</head>
+<body>
+<script>
+history.replaceState(null,null,'index.html');
+var histlength=history.length;
+try{history.go(-histlength);}catch(e){}
+</script>
+
+<div class="topbar">
+    <h1 class="brand"><span>TechLand</span> | PS4 GoldHEN Host</h1>
+    <p class="sub">سرزمین تکنالوژی • PS4 Firmware Host</p>
+    <div class="contact">مارکیت کابل، دکان نمبر 016 &nbsp; | &nbsp; WhatsApp: <a href="https://wa.me/93729802729" target="_blank">0729802729</a></div>
+</div>
+
+<div class="techland">
+    <strong>TechLand</strong>
+    <small>آدرس: مارکیت کابل، دکان نمبر 016 — برای تماس و واتساپ: 0729802729</small>
+</div>
+
+<h1 id="msgs">PS4 Exploit Host</h1>
+
+<div id="menu">
+    <h2>Select Your Firmware</h2>
+
+    <button class="btn btn-multi" onmouseover="msgs.innerHTML='PS4 GoldHEN Host for 5.05 and 7.00 to 13.52 FW - (Auto Exploit Selection)'" onmouseout="msgs.innerHTML='PS4 Exploit Host'" onclick="location.replace('g2all/index.html')">GoldHEN Multi FW</button>
+    <button class="btn" onmouseover="msgs.innerHTML='PS4 5.05 FW Host v2.5'" onmouseout="msgs.innerHTML='PS4 Exploit Host'" onclick="location.replace('505/index.html')">5.05 FW v2.5</button>
+    <a href="672goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW GoldHEN Host'" onmouseout="msgs.innerHTML='PS4 Exploit Host'">6.72 FW GoldHEN</button></a>
+    <a href="672/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 6.72 FW Host v3.0'" onmouseout="msgs.innerHTML='PS4 Exploit Host'">6.72 FW v3.0</button></a>
+    <br>
+    <a href="900goldhen/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW GoldHEN Host - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PS4 Exploit Host'">9.00 FW GoldHEN</button></a>
+    <a href="900v3/index.html"><button class="btn" onmouseover="msgs.innerHTML='PS4 9.00 FW Host v3.0 - (FontFaceSet Webkit)'" onmouseout="msgs.innerHTML='PS4 Exploit Host'">9.00 FW v3.0</button></a>
+    <br>
+    <button class="btn" onmouseover="msgs.innerHTML='Restore a Host to User’s Guide without using DNS'" onmouseout="msgs.innerHTML='PS4 Exploit Host'" onclick="location.replace('restore/index.html')">Restore Host</button>
+    <br>
+    <button class="btn btn-onln" onclick="donations()" style="margin-top:35px;width:min(468px,100%);">For Donations (Only in Cryptocurrencies)</button>
+
+    <p style="margin-top:35px;color:#ddd;text-align:center;">A special thanks to all the devs on the scene.</p>
+</div>
+
+<div id="crypto">
+    <h2>Crypto Donation</h2>
+    <div class="qr-grid">
+        <div class="qr-card">
+            <img src="btc.jpg" alt="Bitcoin QR Code">
+            <h3>Bitcoin (BTC)</h3>
+            <p>bc1q6cnsykmvem6zgw8wag3ygee0jkhtxj6rkp2nrm</p>
+        </div>
+        <div class="qr-card">
+            <img src="eth.jpg" alt="Ethereum QR Code">
+            <h3>Ethereum (ETH)</h3>
+            <p>0x7Ae1825ddE196925dB8B7832F436cA0eAeaF932c</p>
+        </div>
+    </div>
+    <button class="btn return" onclick="load_menu()">Return</button>
+</div>
+
+<div class="footer">TechLand • Kabul Market • Shop 016</div>
+
+<script>
+function donations(){
+    document.getElementById('crypto').style.display='block';
+    document.getElementById('menu').style.display='none';
+    document.getElementById('msgs').innerHTML='Crypto Donation';
+}
+function load_menu(){
+    document.getElementById('menu').style.display='block';
+    document.getElementById('crypto').style.display='none';
+    document.getElementById('msgs').innerHTML='PS4 Exploit Host';
+}
+</script>
+</body>
+</html>
